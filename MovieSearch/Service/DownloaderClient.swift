@@ -6,3 +6,27 @@
 //
 
 import Foundation
+
+class DownloaderClient {
+    
+    func downloadMovies(search: String, completion: @escaping (Result<[Film]?, DownloaderError>) -> Void) {
+        guard let url = URL(string: "https://www.omdbapi.com/?s=\(search)&apikey=d1e130e3") else {
+            return completion(.failure(.wrongUrl))
+        }
+        URLSession.shared.dataTask(with: url) { (data, response, error) in
+            guard let data = data, error == nil else {
+                return completion(.failure(.dataDidntCome))
+        }
+            guard let movieAnswer = try? JSONDecoder().decode(IncomingFilms.self, from: data) else {
+                return completion(.failure(.dataCouldNot))
+            }
+            completion(.success(movieAnswer.films))
+        }.resume()
+    }
+}
+
+enum DownloaderError: Error {
+    case wrongUrl
+    case dataDidntCome
+    case dataCouldNot
+}
