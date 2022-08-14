@@ -5,16 +5,28 @@
 //  Created by Oncu Can on 14.08.2022.
 //
 
-import SwiftUI
+import Foundation
 
-struct Film: View {
-    var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+struct Film: Codable {
+    let title: String
+    let year: String
+    let imdbId: String
+    let type: String
+    let poster: String
+    
+    private enum CodingKeys: String, CodingKey {
+        case title = "Title"
+        case year = "Year"
+        case imdbId = "imdbId"
+        case type = "Type"
+        case poster = "Poster"
     }
 }
 
-struct Film_Previews: PreviewProvider {
-    static var previews: some View {
-        Film()
+struct IncomingFilms: Codable {
+    let films: [Film]
+    
+    private enum CodingKeys: String, CodingKey {
+        case films = "Search"
     }
 }

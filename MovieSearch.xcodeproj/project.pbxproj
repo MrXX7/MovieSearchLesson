@@ -11,7 +11,7 @@
 		AD92D76A28A94BA500D69ABB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AD92D76928A94BA500D69ABB /* Assets.xcassets */; };
 		AD92D76D28A94BA500D69ABB /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AD92D76C28A94BA500D69ABB /* Preview Assets.xcassets */; };
 		AD92D77828A94CC800D69ABB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD92D77728A94C8700D69ABB /* ContentView.swift */; };
-		AD92D77A28A94E9200D69ABB /* Film.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD92D77928A94E9200D69ABB /* Film.swift */; };
+		AD92D77C28A94FBA00D69ABB /* Film.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD92D77B28A94FBA00D69ABB /* Film.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,7 +20,7 @@
 		AD92D76928A94BA500D69ABB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AD92D76C28A94BA500D69ABB /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		AD92D77728A94C8700D69ABB /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		AD92D77928A94E9200D69ABB /* Film.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Film.swift; sourceTree = "<group>"; };
+		AD92D77B28A94FBA00D69ABB /* Film.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Film.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +53,7 @@
 		AD92D76428A94BA200D69ABB /* MovieSearch */ = {
 			isa = PBXGroup;
 			children = (
+				AD92D77D28A9521100D69ABB /* Service */,
 				AD92D77628A94C5500D69ABB /* App */,
 				AD92D77528A94C4900D69ABB /* ViewModel */,
 				AD92D77428A94C4500D69ABB /* View */,
@@ -74,7 +75,7 @@
 		AD92D77328A94BE900D69ABB /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				AD92D77928A94E9200D69ABB /* Film.swift */,
+				AD92D77B28A94FBA00D69ABB /* Film.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -100,6 +101,13 @@
 				AD92D76528A94BA200D69ABB /* MovieSearchApp.swift */,
 			);
 			path = App;
+			sourceTree = "<group>";
+		};
+		AD92D77D28A9521100D69ABB /* Service */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Service;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -173,7 +181,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AD92D77828A94CC800D69ABB /* ContentView.swift in Sources */,
-				AD92D77A28A94E9200D69ABB /* Film.swift in Sources */,
+				AD92D77C28A94FBA00D69ABB /* Film.swift in Sources */,
 				AD92D76628A94BA200D69ABB /* MovieSearchApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
