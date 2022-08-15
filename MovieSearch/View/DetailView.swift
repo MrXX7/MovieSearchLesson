@@ -13,8 +13,25 @@ struct DetailView: View {
     @ObservedObject var filmDetailViewModel = FilmDetailViewModel()
     
     var body: some View {
-        VStack {
-            Text(filmDetailViewModel.filmDetaili?.plot ?? "")
+        VStack(alignment: .leading, spacing: 5) {
+            HStack {
+                Spacer()
+            SpecialImage(url: filmDetailViewModel.filmDetaili?.poster ?? "")
+                .frame(width: UIScreen.main.bounds.width * 0.6, height: UIScreen.main.bounds.height * 0.3, alignment: .center)
+                Spacer()
+            }
+            Text(filmDetailViewModel.filmDetaili?.title ?? "").font(.title).padding()
+            
+            Text(filmDetailViewModel.filmDetaili?.plot ?? "").padding()
+            
+            Text("Director: \(filmDetailViewModel.filmDetaili?.director ?? "")").padding()
+            
+            Text("Writer: \(filmDetailViewModel.filmDetaili?.writer ?? "")").padding()
+            
+            Text("Awards: \(filmDetailViewModel.filmDetaili?.awards ?? "")").padding()
+            Text("Year: \(filmDetailViewModel.filmDetaili?.year ?? "")").padding()
+            Spacer()
+            
         }.onAppear(perform: {
             self.filmDetailViewModel
                 .takeFilmDetail(imdbId: imdbId)

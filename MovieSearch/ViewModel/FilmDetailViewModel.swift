@@ -19,7 +19,9 @@ class FilmDetailViewModel: ObservableObject {
             case .failure(let wrong):
                 print(wrong)
             case .success(let filmDetail):
-                self.filmDetaili = FilmDetailsViewModel(detail: filmDetail)
+                DispatchQueue.main.async {
+                    self.filmDetaili = FilmDetailsViewModel(detail: filmDetail)
+                }
             }
         })
     }
