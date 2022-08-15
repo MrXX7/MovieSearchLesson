@@ -18,6 +18,7 @@
 		ADACE0CB28AA4FA500A740F9 /* SpecialImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADACE0CA28AA4FA500A740F9 /* SpecialImage.swift */; };
 		ADADDD8328AA86590012F8CA /* FilmDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADADDD8228AA86590012F8CA /* FilmDetail.swift */; };
 		ADADDD8528AA90D50012F8CA /* FilmDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADADDD8428AA90D50012F8CA /* FilmDetailViewModel.swift */; };
+		ADADDD8728AA95240012F8CA /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADADDD8628AA95240012F8CA /* DetailView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +34,7 @@
 		ADACE0CA28AA4FA500A740F9 /* SpecialImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpecialImage.swift; sourceTree = "<group>"; };
 		ADADDD8228AA86590012F8CA /* FilmDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilmDetail.swift; sourceTree = "<group>"; };
 		ADADDD8428AA90D50012F8CA /* FilmDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilmDetailViewModel.swift; sourceTree = "<group>"; };
+		ADADDD8628AA95240012F8CA /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +100,7 @@
 			children = (
 				AD92D77728A94C8700D69ABB /* MovieListView.swift */,
 				ADACE0CA28AA4FA500A740F9 /* SpecialImage.swift */,
+				ADADDD8628AA95240012F8CA /* DetailView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -201,6 +204,7 @@
 				AD92D77828A94CC800D69ABB /* MovieListView.swift in Sources */,
 				AD92D77C28A94FBA00D69ABB /* Film.swift in Sources */,
 				ADACE0CB28AA4FA500A740F9 /* SpecialImage.swift in Sources */,
+				ADADDD8728AA95240012F8CA /* DetailView.swift in Sources */,
 				ADACE0C728AA273700A740F9 /* FilmViewModel.swift in Sources */,
 				AD92D76628A94BA200D69ABB /* MovieSearchApp.swift in Sources */,
 				AD92D77F28A9648000D69ABB /* DownloaderClient.swift in Sources */,
