@@ -17,6 +17,7 @@
 		ADACE0C928AA4B5000A740F9 /* ImageDownloaderClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADACE0C828AA4B5000A740F9 /* ImageDownloaderClient.swift */; };
 		ADACE0CB28AA4FA500A740F9 /* SpecialImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADACE0CA28AA4FA500A740F9 /* SpecialImage.swift */; };
 		ADADDD8328AA86590012F8CA /* FilmDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADADDD8228AA86590012F8CA /* FilmDetail.swift */; };
+		ADADDD8528AA90D50012F8CA /* FilmDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADADDD8428AA90D50012F8CA /* FilmDetailViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +32,7 @@
 		ADACE0C828AA4B5000A740F9 /* ImageDownloaderClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageDownloaderClient.swift; sourceTree = "<group>"; };
 		ADACE0CA28AA4FA500A740F9 /* SpecialImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpecialImage.swift; sourceTree = "<group>"; };
 		ADADDD8228AA86590012F8CA /* FilmDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilmDetail.swift; sourceTree = "<group>"; };
+		ADADDD8428AA90D50012F8CA /* FilmDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilmDetailViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +106,7 @@
 			isa = PBXGroup;
 			children = (
 				ADACE0C628AA273700A740F9 /* FilmViewModel.swift */,
+				ADADDD8428AA90D50012F8CA /* FilmDetailViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -203,6 +206,7 @@
 				AD92D77F28A9648000D69ABB /* DownloaderClient.swift in Sources */,
 				ADADDD8328AA86590012F8CA /* FilmDetail.swift in Sources */,
 				ADACE0C928AA4B5000A740F9 /* ImageDownloaderClient.swift in Sources */,
+				ADADDD8528AA90D50012F8CA /* FilmDetailViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
