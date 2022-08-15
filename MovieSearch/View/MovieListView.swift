@@ -26,18 +26,21 @@ struct MovieListView: View {
             }).padding().textFieldStyle(RoundedBorderTextFieldStyle())
             
         List(filmViewModel.movies, id: \.imdbId) { film in
-            HStack {
-                SpecialImage(url: film.poster)
-                    .frame(width: 80, height: 120)
-                
-                VStack (alignment: .leading) {
-                    Text(film.title)
-                        .font(.title3)
-                        .foregroundColor(.blue)
-                    Text(film.year)
-                    .foregroundColor(.orange)
+            NavigationLink(destination: DetailView(imdbId: film.imdbId), label: {
+                HStack {
+                    SpecialImage(url: film.poster)
+                        .frame(width: 80, height: 120)
+                    
+                    VStack (alignment: .leading) {
+                        Text(film.title)
+                            .font(.title3)
+                            .foregroundColor(.blue)
+                        Text(film.year)
+                        .foregroundColor(.orange)
+                    }
                 }
-            }
+            })
+            
         }.navigationTitle("Movies")
                 
             }
