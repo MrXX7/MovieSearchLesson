@@ -22,7 +22,7 @@ struct MovieListView: View {
         NavigationView {
             VStack {
             TextField("Search for Movies", text: $willSearchMovie, onEditingChanged: { _ in }, onCommit: {
-                self.filmViewModel.doMovieSearch(movieName: willSearchMovie)
+                self.filmViewModel.doMovieSearch(movieName: willSearchMovie.trimmingCharacters(in: .whitespacesAndNewlines).addingPercentEncoding(withAllowedCharacters: .urlHostAllowed) ?? willSearchMovie)
             }).padding().textFieldStyle(RoundedBorderTextFieldStyle())
             
         List(filmViewModel.movies, id: \.imdbId) { film in
