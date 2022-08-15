@@ -18,7 +18,18 @@ struct MovieListView: View {
     
     var body: some View {
         List(filmViewModel.movies, id: \.imdbId) { film in
-            Text(film.title)
+            HStack {
+                Image("placeholder")
+                    .resizable()
+                    .frame(width: 100, height: 150)
+                VStack (alignment: .leading) {
+                    Text(film.title)
+                        .font(.title3)
+                        .foregroundColor(.blue)
+                    Text(film.year)
+                        .foregroundColor(.orange)
+                }
+            }
         }
     }
 }
