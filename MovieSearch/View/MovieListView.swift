@@ -11,13 +11,20 @@ struct MovieListView: View {
     
    @ObservedObject var filmViewModel: FilmListViewModel
     
+    @State var willSearchMovie = ""
+    
     init() {
         self.filmViewModel = FilmListViewModel()
-        self.filmViewModel.doMovieSearch(movieName: "hannibal")
+        
     }
     
     var body: some View {
         NavigationView {
+            VStack {
+            TextField("Search for Movies", text: $willSearchMovie, onEditingChanged: { _ in }, onCommit: {
+                self.filmViewModel.doMovieSearch(movieName: willSearchMovie)
+            }).padding().textFieldStyle(RoundedBorderTextFieldStyle())
+            
         List(filmViewModel.movies, id: \.imdbId) { film in
             HStack {
                 SpecialImage(url: film.poster)
@@ -32,12 +39,16 @@ struct MovieListView: View {
                 }
             }
         }.navigationTitle("Movies")
+                
+            }
         }
     }
 }
 
 struct MovieListView_Previews: PreviewProvider {
     static var previews: some View {
-        MovieListView()
+        Group {
+            MovieListView()
+        }
     }
 }
