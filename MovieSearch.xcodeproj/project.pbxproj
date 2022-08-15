@@ -16,6 +16,7 @@
 		ADACE0C728AA273700A740F9 /* FilmViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADACE0C628AA273700A740F9 /* FilmViewModel.swift */; };
 		ADACE0C928AA4B5000A740F9 /* ImageDownloaderClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADACE0C828AA4B5000A740F9 /* ImageDownloaderClient.swift */; };
 		ADACE0CB28AA4FA500A740F9 /* SpecialImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADACE0CA28AA4FA500A740F9 /* SpecialImage.swift */; };
+		ADADDD8328AA86590012F8CA /* FilmDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADADDD8228AA86590012F8CA /* FilmDetail.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +30,7 @@
 		ADACE0C628AA273700A740F9 /* FilmViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilmViewModel.swift; sourceTree = "<group>"; };
 		ADACE0C828AA4B5000A740F9 /* ImageDownloaderClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageDownloaderClient.swift; sourceTree = "<group>"; };
 		ADACE0CA28AA4FA500A740F9 /* SpecialImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpecialImage.swift; sourceTree = "<group>"; };
+		ADADDD8228AA86590012F8CA /* FilmDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilmDetail.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +86,7 @@
 			isa = PBXGroup;
 			children = (
 				AD92D77B28A94FBA00D69ABB /* Film.swift */,
+				ADADDD8228AA86590012F8CA /* FilmDetail.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -198,6 +201,7 @@
 				ADACE0C728AA273700A740F9 /* FilmViewModel.swift in Sources */,
 				AD92D76628A94BA200D69ABB /* MovieSearchApp.swift in Sources */,
 				AD92D77F28A9648000D69ABB /* DownloaderClient.swift in Sources */,
+				ADADDD8328AA86590012F8CA /* FilmDetail.swift in Sources */,
 				ADACE0C928AA4B5000A740F9 /* ImageDownloaderClient.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
